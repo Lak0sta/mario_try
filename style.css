@@ -1,0 +1,78 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #6b88fe;
+}
+.scene {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+.ground {
+  width: 125px;
+  height: 27px;
+  background: url('img/mario-objects.png') no-repeat;
+  background-position: -1074px -139px;
+}
+
+.hole {
+  width: 125px;
+  height: 27px;
+}
+
+#mario {
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  background: url(img/mario-sprites.png) no-repeat;
+  left: 0;
+  bottom: 27px;
+  background-position: -103px -40px;
+  transition: left .3s,  bottom .3s;
+}
+
+#mario.rightmove {
+  background-position: -24px -40px;
+}
+
+#mario-left.leftmove{
+  background-position: -110px -120px;
+}
+#mario-left{
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  background: url(img/mario-sprites.png) no-repeat;
+  left: 0;
+  bottom: 27px;
+  background-position: -27px -120px;
+  transition: left .3s,  bottom .3s;
+}
+#mario.down{
+  background-position: -182px -41px;;
+}
+#mario-left.down{
+  background-position: -268px -41px;
+}
+#death{
+  width: 30px;
+  height: 48px;
+  position: absolute;
+  background: url(img/mario-sprites.png) no-repeat;
+  left: 0;
+  bottom: 27px;
+  background-position: -25px -352px;
+  transition: left .3s,  bottom .3s;
+}
